@@ -12,7 +12,7 @@ test_scan() {
   echo "dummy content" > "$test_input_dir/dummy_file.txt"
 
   # Run the scan script
-  /usr/local/bin/scan.sh "$test_input_dir" > "$test_output_file"
+  scripts/scan.sh "$test_input_dir" > "$test_output_file"
 
   # Check if the output file is created
   if [ ! -f "$test_output_file" ]; then
