@@ -1,5 +1,5 @@
 # Use the scancode-toolkit as the base image
-FROM scancode/scancode-toolkit:latest
+FROM ghcr.io/redhatproductsecurity/licensescanner:scancode-base
 
 # Set the maintainer label
 LABEL maintainer="samwalke@redhat.com"
