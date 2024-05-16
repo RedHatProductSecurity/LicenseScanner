@@ -3,7 +3,7 @@ name: CI
 
 permissions:
   contents: write
-  pages: write
+  attestations: write
   id-token: write
   packages: write
 
@@ -20,9 +20,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-
     - name: Clone scancode-toolkit repository
       run: git clone https://github.com/nexB/scancode-toolkit.git
 
