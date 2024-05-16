@@ -115,4 +115,5 @@ jobs:
     - name: Run tests
       run: |
         chmod +x tests/test_scan.sh
+        chmod +x scripts/scan.sh
         ./tests/test_scan.sh
